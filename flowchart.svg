@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e1f0ff"/>
+      <stop offset="100%" stop-color="#f6fbff"/>
+    </linearGradient>
+    <style>
+      .panel {
+        fill: url(#bgGradient);
+        stroke: #7aa7ff;
+        stroke-width: 2;
+        rx: 32;
+        ry: 32;
+      }
+      .title {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        fill: #13223c;
+      }
+      .subtitle {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.04em;
+        fill: #475571;
+      }
+      .node-card {
+        fill: rgba(255, 255, 255, 0.97);
+        stroke: rgba(77, 105, 255, 0.28);
+        stroke-width: 2;
+        filter: drop-shadow(0 20px 40px rgba(36, 63, 122, 0.18));
+      }
+      .node-title {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        fill: #17243d;
+      }
+      .node-body {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+        fill: #42516d;
+      }
+      .arrow-magenta, .arrow-green, .arrow-blue {
+        fill: none;
+        stroke-width: 3.2;
+      }
+      .arrow-magenta { stroke: #d257ff; }
+      .arrow-green { stroke: #44b470; }
+      .arrow-blue { stroke: #4d69ff; }
+      .label-box {
+        fill: rgba(255, 255, 255, 0.92);
+        stroke: rgba(19, 34, 60, 0.08);
+        stroke-width: 0.8;
+        rx: 10;
+        ry: 10;
+      }
+      .arrow-text {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 13px;
+        fill: #2b3957;
+      }
+      .legend-card {
+        fill: rgba(255, 255, 255, 0.88);
+        stroke: rgba(77, 105, 255, 0.2);
+        stroke-width: 1.4;
+        rx: 16;
+        ry: 16;
+      }
+      .legend-text {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 13px;
+        fill: #1c2a45;
+      }
+    </style>
+    <marker id="marker-magenta" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#d257ff"/>
+    </marker>
+    <marker id="marker-green" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#44b470"/>
+    </marker>
+    <marker id="marker-blue" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#4d69ff"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="24" width="952" height="572" class="panel"/>
+
+  <text x="500" y="90" text-anchor="middle" class="title">Boredom Chair Tech Stack Flow</text>
+  <text x="500" y="116" text-anchor="middle" class="subtitle">Create flow (magenta) · Retrieve flow (green) · IoT sync (blue)</text>
+
+  <!-- Top lane -->
+  <g transform="translate(80,170)">
+    <rect width="200" height="140" rx="28" class="node-card"/>
+    <text x="24" y="56" class="node-title">User</text>
+    <text x="24" y="82" class="node-body">Chair screen + phone hub</text>
+    <text x="24" y="104" class="node-body">Receives rituals &amp; nudges</text>
+  </g>
+
+  <g transform="translate(320,160)">
+    <rect width="210" height="160" rx="30" class="node-card"/>
+    <text x="24" y="56" class="node-title">Calm Interface</text>
+    <text x="24" y="82" class="node-body">Ritual composer</text>
+    <text x="24" y="102" class="node-body">Rewards dashboard</text>
+    <text x="24" y="122" class="node-body">Presence-aware UI</text>
+  </g>
+
+  <g transform="translate(570,150)">
+    <rect width="230" height="180" rx="32" class="node-card"/>
+    <text x="24" y="62" class="node-title">Calm Orchestrator</text>
+    <text x="24" y="90" class="node-body">Session engine + mode AI</text>
+    <text x="24" y="110" class="node-body">Reward logic</text>
+    <text x="24" y="130" class="node-body">Biofeedback rules</text>
+    <text x="24" y="150" class="node-body">IoT command bus</text>
+  </g>
+
+  <g transform="translate(840,180)">
+    <rect width="120" height="120" rx="26" class="node-card"/>
+    <text x="60" y="58" text-anchor="middle" class="node-title">Serotonin</text>
+    <text x="60" y="80" text-anchor="middle" class="node-title">Vault</text>
+    <text x="60" y="102" text-anchor="middle" class="node-body">Recipes · history</text>
+  </g>
+
+  <!-- Bottom lane -->
+  <g transform="translate(200,380)">
+    <rect width="220" height="140" rx="30" class="node-card"/>
+    <text x="24" y="58" class="node-title">Chair Sensor Fabric</text>
+    <text x="24" y="84" class="node-body">Pressure · HRV · respiration</text>
+    <text x="24" y="104" class="node-body">Presence trigger &amp; massage</text>
+  </g>
+
+  <g transform="translate(520,380)">
+    <rect width="220" height="140" rx="30" class="node-card"/>
+    <text x="24" y="58" class="node-title">IoT Environment Mesh</text>
+    <text x="24" y="84" class="node-body">Lights / audio / HVAC / blinds</text>
+    <text x="24" y="104" class="node-body">Phone &amp; desktop focus locks</text>
+  </g>
+
+  <!-- Create flow arrows -->
+  <path d="M280,240 H320" class="arrow-magenta" marker-end="url(#marker-magenta)"/>
+  <g transform="translate(292,210)">
+    <rect width="96" height="28" class="label-box"/>
+    <text x="48" y="18" text-anchor="middle" class="arrow-text">Idea intake</text>
+  </g>
+
+  <path d="M530,240 H570" class="arrow-magenta" marker-end="url(#marker-magenta)"/>
+  <g transform="translate(508,210)">
+    <rect width="132" height="28" class="label-box"/>
+    <text x="66" y="18" text-anchor="middle" class="arrow-text">Mode blueprint</text>
+  </g>
+
+  <path d="M800,240 H840" class="arrow-magenta" marker-end="url(#marker-magenta)"/>
+  <g transform="translate(770,210)">
+    <rect width="132" height="28" class="label-box"/>
+    <text x="66" y="18" text-anchor="middle" class="arrow-text">Store personalised set</text>
+  </g>
+
+  <!-- Retrieve flow arrows -->
+  <path d="M310,380 V330 C310,300 360,290 420,290 H570" class="arrow-green" marker-end="url(#marker-green)"/>
+  <g transform="translate(360,302)">
+    <rect width="140" height="28" class="label-box"/>
+    <text x="70" y="18" text-anchor="middle" class="arrow-text">Presence detected</text>
+  </g>
+
+  <path d="M685,330 V340 C685,360 700,370 720,370 H820" class="arrow-green" marker-end="url(#marker-green)"/>
+  <g transform="translate(712,336)">
+    <rect width="124" height="28" class="label-box"/>
+    <text x="62" y="18" text-anchor="middle" class="arrow-text">Session context</text>
+  </g>
+
+  <path d="M520,430 H420 C360,430 280,430 220,320" class="arrow-green" marker-end="url(#marker-green)"/>
+  <g transform="translate(330,386)">
+    <rect width="148" height="28" class="label-box"/>
+    <text x="74" y="18" text-anchor="middle" class="arrow-text">Calm routine output</text>
+  </g>
+
+  <path d="M520,450 C470,470 400,500 300,500 H210" class="arrow-green" marker-end="url(#marker-green)"/>
+  <g transform="translate(340,468)">
+    <rect width="164" height="28" class="label-box"/>
+    <text x="82" y="18" text-anchor="middle" class="arrow-text">Rewards &amp; feedback</text>
+  </g>
+
+  <!-- Vault to orchestrator (retrieve) -->
+  <path d="M900,300 V330 C900,360 860,360 800,360 H680" class="arrow-green" marker-end="url(#marker-green)"/>
+  <g transform="translate(804,332)">
+    <rect width="150" height="28" class="label-box"/>
+    <text x="75" y="18" text-anchor="middle" class="arrow-text">Pull stored recipes</text>
+  </g>
+
+  <!-- IoT sync -->
+  <path d="M685,330 V360" class="arrow-blue" marker-end="url(#marker-blue)"/>
+  <g transform="translate(692,340)">
+    <rect width="134" height="28" class="label-box"/>
+    <text x="67" y="18" text-anchor="middle" class="arrow-text">IoT commands</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(220,520)">
+    <rect width="180" height="56" class="legend-card"/>
+    <path d="M36,28 H78" class="arrow-magenta" marker-end="url(#marker-magenta)"/>
+    <text x="106" y="32" class="legend-text">Create flow</text>
+  </g>
+
+  <g transform="translate(426,520)">
+    <rect width="180" height="56" class="legend-card"/>
+    <path d="M36,28 H78" class="arrow-green" marker-end="url(#marker-green)"/>
+    <text x="106" y="32" class="legend-text">Retrieve flow</text>
+  </g>
+
+  <g transform="translate(632,520)">
+    <rect width="200" height="56" class="legend-card"/>
+    <path d="M36,28 H86" class="arrow-blue" marker-end="url(#marker-blue)"/>
+    <text x="118" y="32" class="legend-text">IoT sync path</text>
+  </g>
+</svg>
+

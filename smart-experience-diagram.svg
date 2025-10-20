@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <style>
+      .background {
+        fill: #f7f9fc;
+      }
+      .frame {
+        fill: #ffffff;
+        stroke: #d5dbe7;
+        stroke-width: 2;
+        rx: 28;
+        ry: 28;
+      }
+      .zone {
+        fill: none;
+        stroke: #c3cfe3;
+        stroke-width: 2;
+        stroke-dasharray: 12 10;
+        rx: 34;
+        ry: 34;
+      }
+      .title {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        fill: #1c2d4a;
+      }
+      .subtitle {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        fill: #51617d;
+      }
+      .node {
+        fill: #ffffff;
+        stroke: #5c7ce6;
+        stroke-width: 2.4;
+        rx: 22;
+        ry: 22;
+      }
+      .node-alt {
+        fill: #f2f6ff;
+        stroke: #5c7ce6;
+        stroke-width: 2.4;
+        rx: 22;
+        ry: 22;
+      }
+      .label {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        fill: #1d2c48;
+      }
+      .label-small {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+        fill: #3d4c68;
+      }
+      .arrow {
+        fill: none;
+        stroke-width: 3.2;
+      }
+      .arrow-primary {
+        stroke: #4f6af0;
+      }
+      .arrow-secondary {
+        stroke: #36a57d;
+      }
+      .arrow-dashed {
+        stroke-dasharray: 9 8;
+      }
+    </style>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#4f6af0"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#36a57d"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8f9bb5"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="680" class="background"/>
+  <rect x="40" y="40" width="1120" height="600" class="frame"/>
+
+  <text x="600" y="106" text-anchor="middle" class="title">Smart Experience Platform</text>
+  <text x="600" y="136" text-anchor="middle" class="subtitle">Experience touchpoints, service platform, and governance flows</text>
+
+  <!-- Zones -->
+  <rect x="80" y="160" width="360" height="440" class="zone"/>
+  <text x="100" y="194" class="label-small">Experience Layer</text>
+
+  <rect x="460" y="160" width="420" height="440" class="zone"/>
+  <text x="480" y="194" class="label-small">Service Platform Layer</text>
+
+  <rect x="900" y="160" width="220" height="440" class="zone"/>
+  <text x="920" y="194" class="label-small">Governance &amp; Insights</text>
+
+  <!-- Experience nodes -->
+  <g transform="translate(120,220)">
+    <rect width="280" height="100" class="node"/>
+    <text x="140" y="54" text-anchor="middle" class="label">User</text>
+    <text x="140" y="78" text-anchor="middle" class="label-small">Occupant &amp; account holder</text>
+  </g>
+
+  <g transform="translate(120,340)">
+    <rect width="280" height="100" class="node"/>
+    <text x="140" y="52" text-anchor="middle" class="label">Chair Screen Interface</text>
+    <text x="140" y="76" text-anchor="middle" class="label-small">Immersive guidance &amp; feedback</text>
+  </g>
+
+  <g transform="translate(120,460)">
+    <rect width="280" height="100" class="node"/>
+    <text x="140" y="52" text-anchor="middle" class="label">Mobile Companion App</text>
+    <text x="140" y="76" text-anchor="middle" class="label-small">Remote control &amp; notifications</text>
+  </g>
+
+  <g transform="translate(120,580)">
+    <rect width="280" height="100" class="node-alt"/>
+    <text x="140" y="52" text-anchor="middle" class="label">Connected Smart Devices</text>
+    <text x="140" y="76" text-anchor="middle" class="label-small">Lighting, audio, HVAC, wearables</text>
+  </g>
+
+  <!-- Platform nodes -->
+  <g transform="translate(520,240)">
+    <rect width="240" height="120" class="node"/>
+    <text x="120" y="58" text-anchor="middle" class="label">BaaS Cloud Services</text>
+    <text x="120" y="82" text-anchor="middle" class="label-small">Session logic, APIs, data hub</text>
+  </g>
+
+  <g transform="translate(520,390)">
+    <rect width="240" height="110" class="node"/>
+    <text x="120" y="56" text-anchor="middle" class="label">Enterprise Identity (SSO)</text>
+    <text x="120" y="80" text-anchor="middle" class="label-small">Authentication, policy, audit</text>
+  </g>
+
+  <g transform="translate(520,530)">
+    <rect width="240" height="110" class="node"/>
+    <text x="120" y="56" text-anchor="middle" class="label">IoT Device Hub</text>
+    <text x="120" y="80" text-anchor="middle" class="label-small">Command routing &amp; telemetry</text>
+  </g>
+
+  <g transform="translate(780,530)">
+    <rect width="220" height="110" class="node-alt"/>
+    <text x="110" y="56" text-anchor="middle" class="label">Recommendation Engine</text>
+    <text x="110" y="80" text-anchor="middle" class="label-small">Personalised routines &amp; tips</text>
+  </g>
+
+  <!-- Governance nodes -->
+  <g transform="translate(940,250)">
+    <rect width="180" height="110" class="node-alt"/>
+    <text x="90" y="56" text-anchor="middle" class="label">Analytics &amp; Compliance</text>
+    <text x="90" y="80" text-anchor="middle" class="label-small">Usage insights &amp; reporting</text>
+  </g>
+
+  <g transform="translate(940,410)">
+    <rect width="180" height="110" class="node-alt"/>
+    <text x="90" y="56" text-anchor="middle" class="label">Security Controls</text>
+    <text x="90" y="80" text-anchor="middle" class="label-small">Policy enforcement &amp; alerts</text>
+  </g>
+
+  <!-- Primary flows -->
+  <path d="M260,320 V340" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+  <path d="M260,440 V460" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+  <path d="M400,390 H520" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+  <path d="M400,510 H520" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+
+  <path d="M760,300 H940" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+  <path d="M760,445 H940" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+
+  <path d="M640,360 V390" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+  <path d="M640,500 V530" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+  <path d="M760,585 H780" class="arrow arrow-primary" marker-end="url(#arrow-blue)"/>
+
+  <path d="M1000,585 H760" class="arrow arrow-secondary" marker-end="url(#arrow-green)"/>
+  <path d="M520,630 H400" class="arrow arrow-secondary" marker-end="url(#arrow-green)"/>
+  <path d="M120,630 C70,630 70,260 120,260" class="arrow arrow-secondary" marker-end="url(#arrow-green)"/>
+
+  <!-- Governance dashed flows -->
+  <path d="M1030,360 C1030,400 900,420 760,420" class="arrow arrow-secondary arrow-dashed" marker-end="url(#arrow-green)"/>
+  <path d="M1030,520 C1030,560 860,560 760,560" class="arrow arrow-secondary arrow-dashed" marker-end="url(#arrow-green)"/>
+  <path d="M1030,300 C1030,260 860,260 760,260" class="arrow arrow-secondary arrow-dashed" marker-end="url(#arrow-green)"/>
+  <path d="M1030,470 C1030,500 860,500 760,500" class="arrow arrow-secondary arrow-dashed" marker-end="url(#arrow-green)"/>
+
+  <!-- Labels for flows -->
+  <text x="310" y="332" class="label-small">Context handoff</text>
+  <text x="310" y="452" class="label-small">Mobile requests</text>
+  <text x="460" y="380" class="label-small">Session orchestration</text>
+  <text x="460" y="500" class="label-small">Control surface</text>
+  <text x="850" y="288" class="label-small">Usage metrics</text>
+  <text x="850" y="432" class="label-small">Policy events</text>
+  <text x="700" y="355" class="label-small">Identity assertions</text>
+  <text x="700" y="495" class="label-small">Device commands</text>
+  <text x="820" y="605" class="label-small">Usage signals</text>
+  <text x="900" y="605" class="label-small">Recommendations</text>
+  <text x="470" y="618" class="label-small">Actuations</text>
+  <text x="160" y="450" class="label-small">Ambient feedback</text>
+</svg>
