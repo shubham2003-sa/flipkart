@@ -310,21 +310,6 @@ a {
     border-bottom: none;
 }
 
-.hero__badge {
-    position: absolute;
-    right: -1.5rem;
-    bottom: -1.5rem;
-    background: var(--accent);
-    color: var(--white);
-    font-weight: 600;
-    padding: 1.1rem 1.6rem;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-    text-align: center;
-    letter-spacing: 0.08em;
-    font-size: 0.9rem;
-}
-
 /* Sections */
 .section {
     padding: clamp(4rem, 6vw, 6rem) 4vw;
@@ -476,7 +461,6 @@ a {
     padding: 2rem;
     box-shadow: var(--shadow-sm);
     border: 1px solid rgba(17, 31, 51, 0.06);
-    overflow-x: auto;
 }
 
 .versions__table h4 {
@@ -485,76 +469,29 @@ a {
 
 .table {
     display: grid;
-    gap: 0.9rem;
-    min-width: 640px;
+    gap: 0.6rem;
 }
 
 .table__row {
     display: grid;
-    grid-template-columns: 1.8fr repeat(4, 1fr);
-    gap: 0.8rem;
-    padding: 1rem 1.2rem;
-    border-radius: var(--radius-md);
-    background: var(--white);
-    box-shadow: var(--shadow-sm);
-    align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    grid-template-columns: 1.6fr repeat(4, 1fr);
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    border-radius: var(--radius-sm);
+    background: rgba(17, 31, 51, 0.04);
+    font-weight: 500;
+    color: var(--text-main);
 }
 
 .table__row--head {
-    background: linear-gradient(135deg, var(--bg-dark), var(--bg-slate));
+    background: var(--accent);
     color: var(--white);
-    box-shadow: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
 }
 
-.table__row--head .table__feature {
-    color: rgba(255, 255, 255, 0.88);
-}
-
-.table__row--head .table__heading {
+.table__row div {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 0.85rem;
-}
-
-.table__feature {
-    font-weight: 600;
-    color: var(--text-main);
-    letter-spacing: 0.01em;
-}
-
-.table__value {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    border-radius: var(--radius-sm);
-    padding: 0.5rem 0.6rem;
-    border: 1px solid rgba(17, 31, 51, 0.08);
-    background: rgba(17, 31, 51, 0.03);
-}
-
-.table__value[data-state="yes"] {
-    color: #1b7b55;
-    background: rgba(27, 123, 85, 0.12);
-    border-color: rgba(27, 123, 85, 0.3);
-}
-
-.table__value[data-state="na"] {
-    color: var(--text-soft);
-    background: rgba(17, 31, 51, 0.04);
-    border-color: rgba(17, 31, 51, 0.08);
-    font-weight: 500;
-}
-
-.table__row:not(.table__row--head):hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(12, 22, 36, 0.12);
 }
 
 .corporate {
@@ -801,12 +738,6 @@ a {
         gap: 1.4rem;
     }
 
-    .hero__badge {
-        position: static;
-        margin-top: 1.5rem;
-        display: inline-block;
-    }
-
     .contact__form {
         padding: 2rem;
     }
@@ -830,11 +761,12 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .versions__table {
-        padding: 1.6rem;
+    .table__row {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .table {
-        min-width: 520px;
+    .table__row div:first-child {
+        grid-column: span 2;
+        font-weight: 600;
     }
 }
